@@ -1,16 +1,21 @@
+import org.jetbrains.annotations.NotNull;
+
 public class LeapYear {
     private static String main(String[] args) {
-        String text = "Rok przestepny";
-        int firstNumber = 365;
-        int secondNumber = 366;
-        boolean rokPrzestepny = true;
-            if (firstNumber%4 == 1){
-                System.out.println("Rok nieprzestępny"); }
-            else if (secondNumber%4 == 0) {
-                System.out.println("Rok przestępny)"); }
-            if (firstNumber%100 == 0) {
-                System.out.println("Rok przestępny"); }
+        String text = "Leap year";
+        String text2 = "Non-leap year";
+        int numberOfDays = 365;
+        if (numberOfDays % 4 == 1) {
+            System.out.println(text2);
+            return text2;
+        } else if (numberOfDays % 4 == 0 && numberOfDays % 100 == 1) {
+            System.out.println(text);
             return text;
-
-            }
+        } else if (numberOfDays % 4 == 0 && numberOfDays % 100 == 0 && numberOfDays % 400 ==1) {
+            System.out.println(text2);
+            return text2;
+        } else if (numberOfDays % 4 == 0 && numberOfDays % 100 == 0 && numberOfDays % 400 == 0) {
+            System.out.println(text); }
+        return text;
     }
+}
