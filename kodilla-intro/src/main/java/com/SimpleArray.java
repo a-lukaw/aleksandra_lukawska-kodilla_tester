@@ -1,3 +1,5 @@
+package com;
+
 public class SimpleArray {
     public static void main(String[] args) {
         String[] albums = new String[] {"Brave New World", "Fear of the Dark", "The number of the beast", "Somewhere in Time", "Senjutsu"};
