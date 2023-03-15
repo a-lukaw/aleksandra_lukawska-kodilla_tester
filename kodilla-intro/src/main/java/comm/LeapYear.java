@@ -1,3 +1,5 @@
+package comm;
+
 public class LeapYear {
     public boolean isLeapYear(int yearToCheck) {
         if (yearToCheck % 4 == 0) {

@@ -5,7 +5,7 @@ public class Car {
     private int wheels;
     private int seats;
 
-    //konstruktor Car
+    //konstruktor Car - przypisanie wartości do zmiennych wheels i seats
     public Car(int wheels, int seats) {
         this.wheels = wheels;
         this.seats = seats;

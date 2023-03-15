@@ -1,4 +1,4 @@
-package com;
+package comm;
 
 public class User {
     //nadajemy klasie atrybuty (zmienne)//

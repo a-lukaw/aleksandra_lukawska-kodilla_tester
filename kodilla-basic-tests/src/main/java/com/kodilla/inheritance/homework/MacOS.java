@@ -8,11 +8,11 @@ public class MacOS extends OperatingSystem {
 
     @Override
     public void turnOn() {
-        System.out.println("Starting MacOS...");
+        System.out.println("Starting MacOS");
     }
 
     @Override
     public void turnOff() {
-        System.out.println("Shutting down MacOS...");
+        System.out.println("Shutting down MacOS");
     }
 }

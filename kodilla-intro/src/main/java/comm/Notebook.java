@@ -1,4 +1,4 @@
-package com;
+package comm;
 
 public class Notebook {
     int weight;

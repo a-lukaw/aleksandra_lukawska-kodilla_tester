@@ -6,15 +6,14 @@ public class Windows extends OperatingSystem {
         super(releaseYear);
     }
 
+    //nadpisujemy metody turnOn i turnOff z klasy OperatingSystem w celu dostosowania działania do odpowiedniego systemu operacyjnego
     @Override
-    //nadpisujemy metody turnOn i turnOff z klasy OperatingSystem (rok wydania systemu Windows)
-
     public void turnOn() {
-        System.out.println("Starting Windows...");
+        System.out.println("Starting Windows");
     }
 
     @Override
     public void turnOff() {
-        System.out.println("Shutting down Windows...");
+        System.out.println("Shutting down Windows");
     }
 }

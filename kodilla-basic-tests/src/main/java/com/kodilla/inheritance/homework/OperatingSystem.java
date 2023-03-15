@@ -10,12 +10,14 @@ public class OperatingSystem {
         this.releaseYear = releaseYear;
     }
 
+
+    //metody turnOn() i turnOff(), które domyślnie wypisują na konsolę informacje o włączeniu i wyłączeniu systemu operacyjnego
     public void turnOn() {
-        System.out.println("Operating system is turning on...");
+        System.out.println("Operating system is turning on");
     }
 
     public void turnOff() {
-        System.out.println("Operating system is turning off...");
+        System.out.println("Operating system is turning off");
     }
 
     //tworzymy getter, aby dostać się do zmiennych prywatnych

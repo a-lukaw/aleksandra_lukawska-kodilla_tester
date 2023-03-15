@@ -1,4 +1,4 @@
-package com;
+package comm;
 
 public class CalcApplication {
     public static void main(String[] args) {

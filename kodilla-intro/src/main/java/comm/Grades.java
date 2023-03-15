@@ -1,4 +1,4 @@
-package com;
+package comm;
 
 public class Grades {
     //dodajemy tablicę, która będzie przechowywać 10 wartości (ocen)

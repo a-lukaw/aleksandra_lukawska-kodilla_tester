@@ -1,4 +1,4 @@
-package com;
+package comm;
 
 public class GradesMain {
     public static void main(String[] args) {

@@ -1,3 +1,5 @@
+package comm;
+
 public class MainExtended {
     public static void main(String[] args) {
         String myName = "Aleksandra";
