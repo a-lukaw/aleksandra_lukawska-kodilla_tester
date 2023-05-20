@@ -6,25 +6,35 @@ package com.kodilla.optional.homework;
 import com.kodilla.stream.User;
 import com.kodilla.stream.UsersRepository;
 
+import java.util.List;
+
+
 public class ForumStats {
+    public double calculateAvgPostsNumberMoreThan40(List<User> users) {
+        return UsersRepository.getUsersList()
+                .stream()
+                .filter(user -> user.getAge() >= 40)
+                .mapToInt(n -> n.getNumberOfPost())
+                .average()
+                .getAsDouble();
+    }
+
+    public double calculateAvgPostsNumberUnder40(List<User> users) {
+        return UsersRepository.getUsersList()
+                .stream()
+                .filter(user -> user.getAge() < 40)
+                .mapToInt(n -> n.getNumberOfPost())
+                .average()
+                .getAsDouble();
+    }
+
     public static void main(String[] args) {
-        double avgPostsNumberUnder45 = UsersRepository.getUsersList()
-                .stream()
-                .filter(user -> user.getAge() < 45)
-                .mapToInt(n -> n.getNumberOfPost())
-                .average()
-                .getAsDouble();
-        System.out.println(avgPostsNumberUnder45);
+        ForumStats forumStats = new ForumStats();
 
+        double averagePostsMoreThan40 = forumStats.calculateAvgPostsNumberMoreThan40();
+        double averagePostsUnder40 = forumStats.calculateAvgPostsNumberUnder40();
 
-        double avgPostsNumberMoreThan45 = UsersRepository.getUsersList()
-                .stream()
-                .filter(user -> user.getAge() > 45)
-                .mapToInt(n -> n.getNumberOfPost())
-                .average()
-                .getAsDouble();
-        System.out.println(avgPostsNumberMoreThan45);
-
-
+        System.out.println("Average number of posts for users aged 40 and above: " + averagePostsMoreThan40);
+        System.out.println("Average number of posts for users under 40: " + averagePostsUnder40);
     }
 }
