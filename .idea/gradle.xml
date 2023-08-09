@@ -12,7 +12,19 @@
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/kodilla-basic-tests" />
             <option value="$PROJECT_DIR$/kodilla-collection" />
+            <option value="$PROJECT_DIR$/kodilla-collections-advanced" />
             <option value="$PROJECT_DIR$/kodilla-intro" />
+            <option value="$PROJECT_DIR$/kodilla-stream" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/W3-schools" />
+        <option name="gradleHome" value="$PROJECT_DIR$/../../../../Gradle/gradle-7.6-bin/gradle-7.6" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/W3-schools" />
           </set>
         </option>
       </GradleProjectSettings>
