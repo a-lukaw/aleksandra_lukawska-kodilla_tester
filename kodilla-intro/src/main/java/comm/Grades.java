@@ -7,7 +7,6 @@ package comm;
 
 public class Grades {
     private int[] grades;
-
     private int lastIndex;
 
     public Grades() {                                                                           //wywołujemy kontruktor
@@ -50,7 +49,7 @@ public class Grades {
             }
             return (double) sum / (lastIndex + 1);
         } else {
-            return 0.0;                                                     // Specjalna wartość, wskazująca brak ocen
+            return 0.0;                                                       // Specjalna wartość, wskazująca brak ocen
         }
     }
 }
