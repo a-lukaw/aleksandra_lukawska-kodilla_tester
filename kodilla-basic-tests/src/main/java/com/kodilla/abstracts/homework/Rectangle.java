@@ -1,21 +1,28 @@
 package com.kodilla.abstracts.homework;
 
-class Rectangle extends Shape {
-    private double width;
-    private double height;
+//Zad. 3.2. dziedziczenie i klasy abstrakcyjne
 
-    public Rectangle(double width, double height) {
-        this.width = width;
-        this.height = height;
+class Rectangle extends Shape {
+
+    int a;
+    int b;
+
+    public Rectangle(int a, int b) {
+        this.a = a;
+        this.b = b;
     }
 
     @Override
     public double calculateArea() {
-        return width * height;
+        double area = a * b;
+        System.out.println("Rectangle area is: " + area);
+        return area;
     }
 
     @Override
     public double calculatePerimeter() {
-        return 2 * (width + height);
+        double perimeter = 2 * a + 2 * b;
+        System.out.println("Rectangle perimeter is: " + perimeter);
+        return perimeter;
     }
 }

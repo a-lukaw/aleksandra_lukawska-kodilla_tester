@@ -1,17 +1,22 @@
 package com.kodilla.abstracts.homework;
 
+//Zad. 3.2. dziedziczenie i klasy abstrakcyjne
+
 public class Application {
+
     public static void main(String[] args) {
+
+        Rectangle rectangle = new Rectangle(5,5);
+        rectangle.calculateArea();
+        rectangle.calculatePerimeter();
+
         Square square = new Square(5);
-        System.out.println("Circle area: " + square.calculateArea());
-        System.out.println("Circle perimeter: " + square.calculatePerimeter());
+        square.calculateArea();
+        square.calculatePerimeter();
 
-        Rectangle rectangle = new Rectangle(3, 4);
-        System.out.println("Rectangle area: " + rectangle.calculateArea());
-        System.out.println("Rectangle perimeter: " + rectangle.calculatePerimeter());
+        Triangle triangle = new Triangle(5,2,7,5);
+        triangle.calculateArea();
+        triangle.calculatePerimeter();
 
-        Triangle triangle = new Triangle(3, 4, 5, 5, 5);
-        System.out.println("Triangle area: " + triangle.calculateArea());
-        System.out.println("Triangle perimeter: " + triangle.calculatePerimeter());
     }
 }

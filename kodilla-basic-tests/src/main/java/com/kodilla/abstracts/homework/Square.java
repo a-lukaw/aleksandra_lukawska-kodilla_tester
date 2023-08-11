@@ -1,20 +1,28 @@
 package com.kodilla.abstracts.homework;
 
+//Zad. 3.2. dziedziczenie i klasy abstrakcyjne
+
 public class Square extends Shape {
 
-    private double side1;
+    int a;
 
-    public Square(double side1) {
-        this.side1 = side1;
+    public Square(int a) {
+        this.a = a;
     }
 
     @Override
     public double calculateArea() {
-        return side1 * side1;
+        int result = a * a;
+        System.out.println("Square area is: " + result);
+        return result;
     }
 
     @Override
     public double calculatePerimeter() {
-        return 4 * side1;
+        double result = 2 * a;
+        System.out.println("Square perimeter is: " + result);
+
+        return result;
     }
 }
+

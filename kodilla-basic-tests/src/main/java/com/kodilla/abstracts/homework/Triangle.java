@@ -1,27 +1,32 @@
 package com.kodilla.abstracts.homework;
 
-class Triangle extends Shape {
-    private double base;
-    private double side1;
-    private double side2;
-    private double side3;
-    private double height;
+//Zad. 3.2. dziedziczenie i klasy abstrakcyjne
 
-    public Triangle(double base, double side1, double side2, double side3, double height) {
-        this.base = base;
-        this.side1 = side1;
-        this.side2 = side2;
-        this.side3 = side3;
-        this.height = height;
+class Triangle extends Shape {
+
+    int a;
+    int b;
+    int c;
+    int h;
+
+    public Triangle(int a, int b, int c, int h) {
+        this.a = a;
+        this.b = b;
+        this.c = c;
+        this.h = h;
     }
 
     @Override
     public double calculateArea() {
-        return 0.5 * height * base;
+        double area = 0.5 * h * a;
+        System.out.println("Triangle area is: " + area);
+        return area;
     }
 
     @Override
     public double calculatePerimeter() {
-        return side1 + side2 + side3;
+        double perimeter = a + b + c;
+        System.out.println("Triangle perimeter is: " + perimeter);
+        return perimeter;
     }
 }
