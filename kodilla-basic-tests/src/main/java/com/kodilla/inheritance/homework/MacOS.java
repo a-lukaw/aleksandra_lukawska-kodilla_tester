@@ -1,18 +1,22 @@
 package com.kodilla.inheritance.homework;
 
+//Zad. 3.1 dziedziczenie w praktyce
+
 public class MacOS extends OperatingSystem {
 
-    public MacOS(int releaseYear) {
-        super(releaseYear);
+    public MacOS(int year) {
+        super(year);
     }
 
     @Override
     public void turnOn() {
-        System.out.println("Starting MacOS");
+        super.turnOn();
+        System.out.println("Turning MacOS " + getYear() + " on...");
     }
 
     @Override
     public void turnOff() {
-        System.out.println("Shutting down MacOS");
+        super.turnOff();
+        System.out.println("Turning MacOS " + getYear() + " off...");
     }
 }

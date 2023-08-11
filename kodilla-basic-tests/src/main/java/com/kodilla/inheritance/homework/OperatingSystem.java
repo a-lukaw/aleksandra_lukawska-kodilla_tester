@@ -1,27 +1,25 @@
 package com.kodilla.inheritance.homework;
 
+//Zad. 3.1 dziedziczenie w praktyce
+
 public class OperatingSystem {
 
-    //prywatne pole releaseYear typu int
-    private int releaseYear;
+    int year;
 
-    //konstruktor, który przyjmuje argument rok wydania systemu operacyjnego i przypisuje go do wartości pola releaseYear
-    public OperatingSystem(int releaseYear) {
-        this.releaseYear = releaseYear;
+    public OperatingSystem(int year) {
+        this.year = year;
     }
 
+    public int getYear() {
+        return year;
+    }
 
-    //metody turnOn() i turnOff(), które domyślnie wypisują na konsolę informacje o włączeniu i wyłączeniu systemu operacyjnego
     public void turnOn() {
-        System.out.println("Operating system is turning on");
+        System.out.println("Turning the system on...");
     }
 
     public void turnOff() {
-        System.out.println("Operating system is turning off");
+        System.out.println("Turning the system off...");
     }
+}
 
-    //tworzymy getter, aby dostać się do zmiennych prywatnych
-    public int getReleaseYear () {
-       return releaseYear;
-        }
-    }

@@ -1,22 +1,16 @@
 package com.kodilla.inheritance.homework;
 
+//Zad. 3.1 dziedziczenie w praktyce
+
 public class Main {
     public static void main(String[] args) {
 
-        //tworzymy obiekt Windows i MacOS z wykorzystaniem getterów z klasy Car
+        MacOS macOS = new MacOS(2022);
+        macOS.turnOn();
+        macOS.turnOff();
 
-        OperatingSystem windows = new Windows(1985);
-        OperatingSystem mac = new MacOS(2001);
-
-
-        //wywołanie metod + wypisanie na konsolę informacji o roku wydania każdego z systemów operacyjnych
+        Windows windows = new Windows(2007);
         windows.turnOn();
         windows.turnOff();
-        System.out.println("Windows release year : " + windows.getReleaseYear());
-
-
-        mac.turnOn();
-        mac.turnOff();
-        System.out.println("MacOS release year : " + mac.getReleaseYear());
     }
 }

@@ -1,19 +1,23 @@
 package com.kodilla.inheritance.homework;
 
+//Zad. 3.1 dziedziczenie w praktyce
+
 public class Windows extends OperatingSystem {
 
-    public Windows(int releaseYear) {
-        super(releaseYear);
+    public Windows(int year) {
+        super(year);
     }
 
-    //nadpisujemy metody turnOn i turnOff z klasy OperatingSystem w celu dostosowania działania do odpowiedniego systemu operacyjnego
     @Override
     public void turnOn() {
-        System.out.println("Starting Windows");
+        super.turnOn();
+        System.out.println("Turning Windows " + getYear() + " on...");
     }
 
     @Override
     public void turnOff() {
-        System.out.println("Shutting down Windows");
+        super.turnOff();
+        System.out.println("Turning Windows " + getYear() + " off...");
     }
 }
+
