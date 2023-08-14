@@ -1,16 +1,17 @@
 package com.kodilla.collections.interfaces.homework;
 
-public class CarRace {
+//Zad. 4.1. wyścigi samochodowe
 
+public class CarRace {
     public static void main(String[] args) {
 
-        Car ford = new Ford();
+        Car ford = new Ford(0);
         doRace(ford);
 
-        Car opel = new Opel();
+        Car opel = new Opel(0);
         doRace(opel);
 
-        Car mazda = new Mazda();
+        Car mazda = new Mazda(0);
         doRace(mazda);
     }
 

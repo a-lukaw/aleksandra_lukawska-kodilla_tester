@@ -1,7 +1,14 @@
 package com.kodilla.collections.interfaces.homework;
 
+//Zad. 4.1. Wyścigi samochodowe
+
 public class Opel implements Car {
-    private int speed = 0;
+
+    int speed;
+
+    public Opel(int speed) {
+        this.speed = speed;
+    }
 
     @Override
     public int getSpeed() {
@@ -10,13 +17,13 @@ public class Opel implements Car {
 
     @Override
     public void increaseSpeed() {
-        speed += 15;
-        System.out.println("Opel current speed : " + speed);
+        speed += 20;
+        System.out.println("Opel current speed: " + speed);
     }
 
     @Override
     public void decreaseSpeed() {
-        speed -= 5;
-        System.out.println("Opel current speed : " + speed);
+        speed -= 10;
+        System.out.println("Opel current speed: " + speed);
     }
 }
