@@ -1,17 +1,36 @@
 package com.kodilla.collections.adv.maps.homework;
 import java.util.Objects;
 
-public class Principal {
+//Zad. 5.2. Szkoły i dyrektorzy
 
-    private String principalName;
+public class Principal {
+    String principalName;
 
     public Principal(String principalName) {
-        this.principalName = principalName;    }
+        this.principalName = principalName;
+    }
 
     public String getPrincipalName() {
-        return principalName;    }
+        return principalName;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Principal principal = (Principal) o;
+        return Objects.equals(principalName, principal.principalName);
+    }
 
     @Override
     public int hashCode() {
-        return Objects.hash(principalName);    }
+        return Objects.hash(principalName);
+    }
+
+    @Override
+    public String toString() {
+        return "Principal{" +
+                "principalName='" + principalName + '\'' +
+                '}';
+    }
 }

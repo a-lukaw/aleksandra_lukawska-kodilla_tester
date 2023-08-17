@@ -1,21 +1,36 @@
 package com.kodilla.collections.adv.maps.homework;
 
+//Zad. 5.2. Szkoły i dyrektorzy
+
 import java.util.ArrayList;
 import java.util.List;
 
 public class School {
-    private String name;
-    private List<Integer> classes = new ArrayList<>();
+    String schoolName;
 
-    public School(String name) {
-        this.name = name;    }
+    public School(String schoolName) {
+        this.schoolName = schoolName;
+    }
+
+    public String getSchoolName() {
+        return schoolName;
+    }
+
+    @Override
+    public String toString() {
+        return "School{" +
+                "schoolName='" + schoolName + '\'' +
+                ", numberOfPupilsInClass=" + numberOfPupilsInClass +
+                '}';
+    }
+
+    List<Integer> numberOfPupilsInClass = new ArrayList<>();
 
     public void addClass(int numberOfStudents) {
-        classes.add(numberOfStudents);    }
-
-    public String getName() {
-        return name;    }
+        numberOfPupilsInClass.add(numberOfStudents);
+    }
 
     public List<Integer> getClasses() {
-        return classes;    }
+        return numberOfPupilsInClass;
+    }
 }
