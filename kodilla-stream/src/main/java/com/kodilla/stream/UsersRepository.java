@@ -5,9 +5,12 @@ package com.kodilla.stream;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 public class UsersRepository {
+
     public static List<User> getUsersList() {
+
         List<User> users = new ArrayList<>();
         users.add(new User("Walter White", 50, 7, "Chemists"));
         users.add(new User("Jessie Pinkman", 25, 4648, "Sales"));

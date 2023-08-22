@@ -1,28 +1,26 @@
 package com.kodilla.UserManager;
 
-import com.kodilla.stream.User;
-import com.kodilla.stream.UsersManagerFilterOlderUsers;
-import com.kodilla.stream.UsersRepository;
-import org.junit.jupiter.api.Test;
+//Zad. 6.1. Lista zadań
 
+import com.kodilla.stream.UsersManager;
+import org.junit.jupiter.api.Test;
 import java.util.Arrays;
 import java.util.List;
-
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class UsersManagerOlderUsersTestSuite {
 
-
     @Test
-    public void testGetOlderUsers() {
+    public void testFilterOlderUsers() {
 
         //given
-        List<String> expectedUsernames = Arrays.asList("Walter White", "Mike Ehrmantraut");
+        List<String> users = UsersManager.filterUsersOlderThan();
 
         //when
-        List<String> olderUsers = UsersManagerFilterOlderUsers.filterOlderUsers();
+        List<String> expectedUsernames = Arrays.asList("Walter White", "Gus Firing", "Gale Boetticher", "Mike Ehrmantraut");
 
         //then
-        assertEquals(expectedUsernames, olderUsers);
+        assertEquals(expectedUsernames, users);
+        assertEquals(4, users.size());
     }
 }

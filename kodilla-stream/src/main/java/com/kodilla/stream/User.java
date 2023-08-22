@@ -1,19 +1,16 @@
 //6.1. Stream
-//klasa User reprezentuje użytkownika systemu (np. forum)
-//jest źródłem danych do testowania Streamów
+//klasa User reprezentuje użytkownika systemu (np. forum) i jest źródłem danych do testowania Streamów
 
 package com.kodilla.stream;
 
 import java.util.Objects;
 
 public class User {
-    public String username;
+    private String username;
     private int age;
     private int numberOfPost;
     private String group;
 
-
-    //alt + insert: konstruktor z wszystkimi polami, gettery i metody equals i hashCode
     public User(String username, int age, int numberOfPost, String group) {
         this.username = username;
         this.age = age;
@@ -49,11 +46,6 @@ public class User {
     public int hashCode() {
         return Objects.hash(username, age, numberOfPost, group);
     }
-
-    @Override
-    public String toString() {
-        return "User{" +
-                "username='" + username + '\'' +
-                '}';
-    }
 }
+
+
