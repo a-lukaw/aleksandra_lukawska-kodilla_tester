@@ -2,7 +2,6 @@
 //klasa UsersRepository udostępnia metodę zwracającą kolekcję (ArrayList) użytkowników
 
 package com.kodilla.stream;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;

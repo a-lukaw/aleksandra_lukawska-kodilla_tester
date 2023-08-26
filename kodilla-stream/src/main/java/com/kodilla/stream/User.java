@@ -2,7 +2,6 @@
 //klasa User reprezentuje użytkownika systemu (np. forum) i jest źródłem danych do testowania Streamów
 
 package com.kodilla.stream;
-
 import java.util.Objects;
 
 public class User {
